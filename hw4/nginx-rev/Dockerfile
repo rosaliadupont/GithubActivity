@@ -33,9 +33,9 @@ ADD nginx.conf /etc/nginx/
 # THese below are the shells we need inside the nginx container to do swapping
 
 ADD init.sh /bin/init.sh
-ADD swap1.sh /bin/swap1.sh
+#ADD swap1.sh /bin/swap1.sh
 ADD swap2.sh /bin/swap2.sh
-ADD swap3.sh /bin/swap3.sh
+#ADD swap3.sh /bin/swap3.sh
 
 # Append "daemon off;" to the beginning of the configuration
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
